@@ -1,0 +1,144 @@
+/*********************************************************************************
+* WEB222 
+–
+Assignment
+01
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy.
+* No part of this assignment has been copied manually or electronically from any other
+* source (including web sites) or distributed to other students.
+*
+* Name: Kazim Akhlaqi       Student ID: 103638177      Date: 24/May/2018
+*
+********************************************************************************/
+
+/*****************************
+* Task 1
+*****************************/
+
+var studentName = "Kazim Akhlaqi";
+var numberOfCourses = 4;
+var program = "CPA";
+var partJob = true;
+
+    console.log("My name is " + studentName + 
+                 " and I a'm in " + program + " program. " +
+                 "I'm taking " + numberOfCourses + " courses in this semester."  
+               );
+
+    if (partJob == true){
+        job = "have"
+    }else {
+        job = "don't have"
+    }
+
+  console.log("My name is " + studentName + 
+                 " and I a'm in " + program + " program. " +
+                 "I'm taking " + numberOfCourses + " courses in this semester and I " +
+                 job + " a part-time job now."
+               );
+
+
+/*****************************
+* Task 2
+*****************************/
+
+var currentYear = 2018;
+
+var age = prompt("Please enter your age: ");
+console.log("You were born in year of " + (currentYear-age) + ".");
+
+var studyYear = prompt("Enter the number of years you expect to study in the college: ");
+console.log("You will graduate from Seneca college in the year of " + (currentYear + parseInt(studyYear)) + ".");
+
+
+/*****************************
+* Task 3
+*****************************/
+
+var celsiusTemperature = 20;
+var celsiusToFahrenheit = (celsiusTemperature x 9.5) + 32;
+console.log(celsiusTemperature + "\u00B0" + "C is " + celsiusToFahrenheit + "\u00B0" + "F.");
+var fahrenheitTemperature = 68;
+var fahrenheitToCelsius =  (fahrenheitTemperature  -  32)  x  5/9;
+console.log(fahrenheitTemperature + "\u00B0" + "F is " + fahrenheitToCelsius + "\u00B0" + "C.");
+
+/*****************************
+* Task 4
+*****************************/
+
+var i;
+for (i = 0; i <= 10; i++)
+if ((i % 2) == 0){
+    
+    console.log(i + " is even.");
+}else { 
+    console.log(i + " is odd.");
+}
+
+/*****************************
+* Task 5
+*****************************/
+
+// A largerNUM function using Declaration approach:
+function largerNum (num1, num2) { 
+
+  if (num1 > num2) {
+   return num1;
+} else {
+    return num2;
+}
+}
+
+// B largerNUM function using Expression approach:
+var greaterNum = function (num1, num2) { 
+  if (num1 > num2) {
+    return num1;
+} else {
+    return num2;
+}
+};
+
+// C Call functions "lagerNum" and "greterNum" with different parameters:
+console.log("The larger number of 1 and 2 is " + largerNum(1,2) + ".");
+console.log("The larger number of 3 and 4 is " + largerNum(3,4) + ".");
+
+console.log("The larger number of 5 and 6 is " + greaterNum(5,6) + ".");
+console.log("The larger number of 7 and 8 is " + greaterNum(7,8) + ".");
+
+/*****************************
+* Task 6
+*****************************/
+
+function Evaluator(){
+    var sum = 0;
+    var average = 0;
+    for (var i=0; i<arguments.length; i++){
+        sum += arguments[i];
+    }
+    average = sum / arguments.length;
+    
+    if (average >= 50){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log("Average, greater than or equal to 50: " + Evaluator(20,30,1));
+console.log("Average, greater than or equal to 50: " + Evaluator(20,30,100,100));
+
+/*****************************
+* Task 7
+*****************************/
+
+var Grader = function(numberScore){
+    
+    
+}
+
+/*****************************
+* Task 7
+*****************************/
+
+var showMultiples(num,numMultiples){
+    
+}

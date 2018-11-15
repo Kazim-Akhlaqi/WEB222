@@ -1,0 +1,134 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Akhlaqi</title>
+    <link rel="stylesheet" href="css/normalize1.css" />
+    <script src="js/registration.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="King Jewellery" height="150" width="300">
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="form">
+        <form method="Post" name="signup" action="https://httpbin.org/post" onsubmit='return formValidation();'>
+            <fieldset>
+                <legend>Please Sign Up</legend>
+
+                <label for="firstname">
+                    <a title="First Name">First Name</a>
+                </label>
+                <input type="text" id="firstname" name="name" placeholder="First Name" required="required" autofocus />
+                <label for="lastname">
+                    <a title="Last Name">Last Name</a>
+                </label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required="required" />
+            </fieldset>
+            <fieldset>
+                <legend>Shipping address</legend>
+
+                <label for="unitnumber">
+                    <a title="Unit #">Unit Number</a>
+                </label>
+                <input type="number" id="unitnumber" name="unitnumber" min="1" placeholder="Unit #" required="required" />
+
+                <label for="streetnumber">
+                    <a title="Street #">Street Number</a>
+                </label>
+                <input type="number" id="streetnumber" name="streetnumber" min="1" placeholder="Street #" required="required" />
+
+                <label for="streetname">
+                    <a title="Street Name">Street Name</a>
+                </label>
+                <input type="text" id="streetname" name="streetname" placeholder="Street Name" required="required" />
+
+                <label for="city">
+                    <a title="City">City</a>
+                </label>
+                <input type="text" id="city" name="city" placeholder="City" required="required" />
+
+                <label for="province">
+                    <a title="Province">Province</a>
+                </label>
+                <select id="province" name="province">
+                    <option value="Ontario" selected>Ontario</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                    <option value="Prince Edward Island">Prince Edward Island</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                </select>
+
+                <label for="postalcode">
+                    <a title="Postal Code Format letter-Digit-Letter Digit-Letter-Digit">Postal Code</a>
+                </label>
+                <input type="text" id="postalcode" name="postalcode" placeholder="Postal Code" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$"
+                    required="required" />
+            </fieldset>
+            <fieldset>
+                <legend>Contact Number</legend>
+
+                <label for="phonenumber">
+                    <a title="Phone Number">Phone</a>
+                </label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="XXX-XXX-XXXX" required="required" />
+
+                <label for="email">
+                    <a title="Email">Email</a>
+                </label>
+                <input type="email" id="email" name="email" placeholder="Email" required="required" />
+
+                <label for="username">
+                    <a title="Username">Username</a>
+                </label>
+                <input type="text" id="username" name="username" placeholder="Username" required="required" />
+
+                <label for="password">
+                    <a title="Password">Password</a>
+                </label>
+                <input type="password" id="password" name="password" placeholder="password" required="required" />
+
+                <label for="confirmpassword">
+                    <a title="Password">Confirm Password</a>
+                </label>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="password" required="required" />
+
+                <input type="hidden" id="studentlastname" name="studentlastname" value="Akhlaqi"/>
+                <input type="hidden" id="studentid" name="studentid" value="103638177"/>
+            </fieldset>
+
+            <button type="submit" value="Submit" name="submit" class="contact-btn">Submit</button>
+
+            <button type="reset" value="Clear" name="reset" onclick="clearErrors()" class="contact-btn">Reset</button>
+
+            <div id="errors"></div>
+        </form>
+    </div>
+
+    <aside>
+        <p>I am Side Panel</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2018 Kazim Akhlaqi</p>
+    </footer>
+
+</body>
+
+</html>

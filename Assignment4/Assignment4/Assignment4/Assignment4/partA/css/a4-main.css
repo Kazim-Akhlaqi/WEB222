@@ -1,0 +1,102 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Kazim Akhlaqi Student ID: 103638177 Date: July 14, 2018 
+* 
+********************************************************************************/
+
+body { 
+    color: rgb(252, 193, 2);
+    text-align: center;
+    background: #a9b90f;
+}
+
+nav, footer { 
+    background-color: rgb(6, 102, 43);
+    }
+
+header { 
+    background: #219a51;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    }
+.app-title { 
+    font-family: 'Lily Script One', cursive, sans-serif;
+    font-size: 4em;
+    text-align: center; 
+    }
+
+.main-table-container { 
+    border: 3px solid rgb(252, 193, 2);
+    max-height: 50em;
+    min-height: 10em;
+    overflow-y: scroll;
+    }
+
+.main-table-top th {
+    color: rgb(252, 193, 2);
+    background-color: rgb(6, 102, 43);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main-table td {
+    color: rgb(252, 193, 2);
+    background-color: rgba(8, 72, 46, 0.84);
+    font-size: 15px;
+    text-align: left;
+    border: 1px solid rgb(252, 193, 2);
+
+}
+
+.main-table p span {
+    font-weight: bold;
+    color: rgb(252, 193, 2);
+}
+
+h4 {
+    color: rgb(252, 193, 2);
+}
+
+nav ul li a {
+    padding: 10px 12px 13px 12px;
+    display: block;
+    line-height: 40px;
+    font: 95% Tahoma, sans-serif;
+    color: rgb(252, 193, 2);
+    text-decoration: none;
+}
+
+nav ul li span {
+    padding: 10px 3px 13px 3px;
+    display: block;
+    line-height: 40px;
+    font: 95% Tahoma, sans-serif;
+    color: rgb(252, 193, 2);;
+    text-decoration: none;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    border: rgb(252, 193, 2) solid 1px;
+    color: rgb(252, 193, 2);
+    text-align: left;
+    font-size: 95%;
+    padding-top: 13px;
+    vertical-align: middle;
+}
+
+html {
+    background-color: #219a51;
+}
